@@ -1,9 +1,9 @@
 // Lo unico que hay que rellenar antes de publicar la web. Todo lo que en las
 // paginas lleva data-dato="..." se escribe con esto.
 const DATOS = {
-  responsable: "[NOMBRE O ESTUDIO]",
-  correo: "[CORREO DE CONTACTO]",
-  pais: "[PAIS]",
+  responsable: "Samby Games",
+  correo: "sambygames@gmail.com",
+  pais: "España",
   // La direccion de la ficha en Google Play cuando exista. Vacia = "muy pronto".
   googlePlay: "",
 };
