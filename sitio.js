@@ -36,3 +36,12 @@ if (visor) {
   });
   visor.addEventListener("click", () => visor.close());
 }
+
+// Las secciones entran al asomar. Sin IntersectionObserver se ven sin mas.
+const porEntrar = document.querySelectorAll(".entra");
+if ("IntersectionObserver" in window) {
+  const ojo = new IntersectionObserver((vistos) => {
+    vistos.forEach((v) => { if (v.isIntersecting) { v.target.classList.add("visto"); ojo.unobserve(v.target); } });
+  }, { threshold: 0.12 });
+  porEntrar.forEach((el) => ojo.observe(el));
+} else porEntrar.forEach((el) => el.classList.add("visto"));

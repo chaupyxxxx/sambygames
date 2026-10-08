@@ -222,3 +222,80 @@ dialog.visor img { width: 100%; cursor: zoom-out; }
   html { scroll-behavior: auto; }
   .boton { transition: none; }
 }
+
+/* ======================= segunda pasada: mas juguete ======================= */
+
+/* fondo con puntos, como el papel de una caja de juguetes */
+body { background-image: radial-gradient(rgba(255, 255, 255, .035) 1.5px, transparent 1.6px); background-size: 26px 26px; }
+
+/* la portada gana pegatinas sueltas y un borde ondulado */
+.portada { padding-bottom: 34px; }
+.portada .ancho { z-index: 2; }
+.portada figure { position: relative; transform: rotate(2deg); animation: flota 6s ease-in-out infinite; }
+.portada .pegatina { position: absolute; width: 104px; height: 104px; border-radius: 26px; border: 4px solid #fff; outline: 4px solid var(--tinta); box-shadow: 0 8px 0 rgba(10, 13, 31, .35); animation: flota 5s ease-in-out infinite; }
+.portada .pegatina.uno { left: -34px; bottom: -30px; transform: rotate(-12deg); animation-delay: -1.5s; }
+.portada .pegatina.dos { right: -22px; top: -36px; transform: rotate(10deg); animation-delay: -3s; }
+@keyframes flota { 0%, 100% { translate: 0 0; } 50% { translate: 0 -10px; } }
+.portada .ola { position: absolute; left: 0; right: 0; bottom: -1px; height: 38px; z-index: 1; display: block; width: 100%; }
+.sellos { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; padding: 0; list-style: none; }
+.sellos li { font-family: var(--titulo); text-transform: uppercase; letter-spacing: .05em; font-size: 1.05rem; color: var(--tinta); background: #fff; border: 3px solid var(--tinta); border-radius: 999px; padding: 2px 14px; box-shadow: 0 3px 0 var(--tinta); }
+.sellos li:nth-child(2) { background: var(--verde); }
+.sellos li:nth-child(3) { background: var(--amarillo); }
+
+/* la cinta que corre con los nombres de los modos */
+.cinta { background: var(--amarillo); border-block: 4px solid var(--tinta); overflow: hidden; transform: rotate(-1.2deg) scale(1.03); margin-block: -6px 0; position: relative; z-index: 3; }
+.cinta div { display: flex; gap: 38px; width: max-content; padding: 8px 0; animation: corre 36s linear infinite; }
+.cinta span { font-family: var(--titulo); font-weight: 900; font-size: 1.5rem; text-transform: uppercase; color: var(--tinta); white-space: nowrap; }
+.cinta span::after { content: "★"; margin-left: 38px; }
+@keyframes corre { to { transform: translateX(-50%); } }
+
+/* cifras con su chapa */
+.cifras ul { padding: 30px 0; }
+.cifras li { background: var(--noche-2); border: 3px solid var(--linea); border-radius: 16px; padding: 14px 8px 12px; }
+
+/* cartas de modo: banda de color y numero grande */
+.modo { padding-top: 30px; transition: transform .15s; overflow: hidden; }
+.modo::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 12px; background: var(--c, var(--amarillo)); border-bottom: 3px solid var(--tinta); }
+.modo::after { content: attr(data-n); position: absolute; right: 12px; bottom: -22px; font-family: var(--titulo); font-weight: 900; font-size: 7rem; line-height: 1; color: rgba(255, 255, 255, .05); pointer-events: none; }
+.modo:hover { transform: translateY(-5px) rotate(-.6deg); }
+
+/* capturas como pantallas de movil, un poco torcidas */
+.captura { border-width: 4px; border-radius: 26px; outline: 3px solid var(--linea); outline-offset: -9px; transition: transform .18s; }
+.partido .captura { transform: rotate(1.6deg); }
+.partido.alreves .captura { transform: rotate(-1.6deg); }
+.rejilla.dos .captura:nth-child(odd) { transform: rotate(-.8deg); }
+.rejilla.dos .captura:nth-child(even) { transform: rotate(.8deg); }
+button.captura:hover { transform: rotate(0) scale(1.02); }
+
+/* seccion "juego justo" */
+.justo .carta h3 { margin-bottom: 8px; display: flex; gap: 12px; align-items: center; }
+.justo .carta p { color: var(--suave); margin: 0; }
+.justo .emoji { flex: none; width: 52px; height: 52px; border-radius: 50%; border: 3px solid var(--tinta); display: grid; place-items: center; font-family: var(--titulo); font-weight: 900; font-size: 1.6rem; color: var(--tinta); box-shadow: inset 0 -5px 0 rgba(10, 13, 31, .25), inset 0 4px 0 rgba(255, 255, 255, .3); }
+.aviso { margin-top: 22px; padding: 14px 18px; border-radius: 14px; border: 3px dashed var(--linea); color: var(--suave); font-size: .97rem; }
+.aviso b { color: var(--texto); }
+
+/* pie con columnas */
+footer .ancho { align-items: flex-start; }
+footer .col { display: grid; gap: 6px; min-width: 180px; }
+footer .col b { font-family: var(--titulo); font-weight: 400; text-transform: uppercase; letter-spacing: .06em; color: var(--amarillo); font-size: 1.05rem; }
+footer .col.marca-pie { margin-right: auto; max-width: 340px; }
+footer .col.marca-pie span { color: var(--suave); }
+
+/* lo que entra al hacer scroll */
+.entra { opacity: 0; transform: translateY(26px); transition: opacity .5s, transform .5s; }
+.entra.visto { opacity: 1; transform: none; }
+
+@media (max-width: 900px) {
+  .portada .pegatina { width: 78px; height: 78px; border-radius: 20px; }
+  .portada .pegatina.uno { left: -8px; }
+  .portada .pegatina.dos { right: -6px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .portada figure, .portada .pegatina, .cinta div { animation: none; }
+  .entra { opacity: 1; transform: none; transition: none; }
+}
+
+/* lo torcido no debe ensanchar la pagina, y una imagen con width y height
+   en el HTML no debe quedarse con su alto de origen */
+html, body { overflow-x: clip; }
+img { height: auto; }
