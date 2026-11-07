@@ -3,17 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Moshblaster · Acción de bolsillo con blasters de juguete</title>
-<meta name="description" content="Moshblaster es un juego de acción gratis para Android: 50 blasters, 33 jefes con fases, oleadas, contratos de caza, un infierno sin fin y un mundo por explorar.">
+<title>Moshblaster · Batallas de blasters de juguete</title>
+<meta name="description" content="Moshblaster es un juego de acción gratis para Android: elige tu blaster y lucha en Blaster Royale, duelos, Robapatos, Patata Caliente, la Liga, 37 jefes y una expedición por un mundo entero.">
 <meta property="og:title" content="Moshblaster">
-<meta property="og:description" content="50 blasters de juguete, 33 jefes con fases y un mundo por explorar. Gratis para Android.">
+<meta property="og:description" content="26 blasters de juguete, Blaster Royale, duelos tres contra tres y 37 jefes con fases. Gratis para Android.">
 <meta property="og:image" content="img/equipo.jpg">
 <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#10152f">
 <link rel="icon" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;900&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;900&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -23,13 +24,14 @@
     <a class="marca" href="index.html"><img src="img/favicon.png" alt=""><span><b>MOSH</b>BLASTER</span></a>
     <nav aria-label="Secciones">
       <a href="#modos">Modos</a>
+      <a href="#equipo">Tu blaster</a>
       <a href="#blasters">Blasters</a>
       <a href="#expedicion">Expedición</a>
+      <a href="#comunidad">Comunidad</a>
       <a href="#capturas">Capturas</a>
-      <a href="#gratis">Gratis</a>
       <a href="#preguntas">Preguntas</a>
-      <a href="#descarga">Descarga</a>
     </nav>
+    <a class="boton mini" href="#descarga">Descargar</a>
   </div>
 </header>
 
@@ -38,17 +40,17 @@
 <div class="portada">
   <div class="ancho">
     <div>
-      <span class="etiqueta">Beta · Android</span>
+      <span class="etiqueta">Beta abierta · Android</span>
       <h1 class="rotulo"><span class="mosh">Mosh</span><span class="blaster">blaster</span></h1>
-      <p class="lema">Blasters de juguete, oleadas que no se repiten, jefes con fases y un mundo entero por explorar. Un pulgar para moverte y otro para apuntar.</p>
+      <p class="lema">Elige tu blaster de juguete y salta a la isla: veinte equipos, una zona que se cierra y un solo ganador. Y cuando quieras otra cosa, duelos, patos que robar, patatas que estallan, la liga y treinta y siete jefes.</p>
       <div class="botones">
-        <a class="boton" href="#descarga">Jugar</a>
+        <a class="boton" href="#descarga" data-play>Jugar gratis</a>
         <a class="boton azul" href="#modos">Ver el juego</a>
       </div>
       <ul class="sellos">
         <li>Gratis</li>
-        <li>Funciona sin conexión</li>
-        <li>Anuncios solo si tú quieres</li>
+        <li>Partidas de 2 a 5 minutos</li>
+        <li>Sin anuncios que salten solos</li>
       </ul>
     </div>
     <figure>
@@ -62,19 +64,19 @@
 
 <div class="cinta" aria-hidden="true">
   <div>
-    <span>Ladder</span><span>Contratos de caza</span><span>Jefes</span><span>Entrada al infierno</span><span>El patio</span><span>La expedición</span><span>Mascotas</span><span>Ranking global</span>
-    <span>Ladder</span><span>Contratos de caza</span><span>Jefes</span><span>Entrada al infierno</span><span>El patio</span><span>La expedición</span><span>Mascotas</span><span>Ranking global</span>
+    <span>Blaster Royale</span><span>Duelos</span><span>Robapatos</span><span>Patata Caliente</span><span>Liga Blaster</span><span>Jefes</span><span>Entrada al infierno</span><span>La expedición</span><span>El patio</span><span>Social</span>
+    <span>Blaster Royale</span><span>Duelos</span><span>Robapatos</span><span>Patata Caliente</span><span>Liga Blaster</span><span>Jefes</span><span>Entrada al infierno</span><span>La expedición</span><span>El patio</span><span>Social</span>
   </div>
 </div>
 
 <div class="cifras">
   <div class="ancho">
     <ul>
-      <li><b>50</b><span>blasters</span></li>
-      <li><b>33</b><span>jefes</span></li>
-      <li><b>6</b><span>modos</span></li>
-      <li><b>65</b><span>piezas de equipo</span></li>
-      <li><b>25</b><span>mascotas</span></li>
+      <li><b>26</b><span>blasters</span></li>
+      <li><b>9</b><span>modos</span></li>
+      <li><b>37</b><span>jefes</span></li>
+      <li><b>50</b><span>aspectos</span></li>
+      <li><b>80</b><span>piezas de equipo</span></li>
     </ul>
   </div>
 </div>
@@ -83,18 +85,19 @@
   <div class="ancho partido entra">
     <div>
       <div class="cabecera" style="margin-bottom:0">
+        <span class="antetitulo">El juego</span>
         <h2>Acción de la que se entiende a la primera</h2>
         <p>Vista desde arriba, partidas de pocos minutos y controles hechos para el móvil. Cada blaster lleva dos ataques, una definitiva y una pasiva, y ninguno se parece al de al lado.</p>
       </div>
       <ul>
-        <li><b>Apuntar dibuja el ataque.</b> La guía enseña la forma real de lo que vas a lanzar: una línea, un cono, el círculo donde cae.</li>
+        <li><b>Apuntar dibuja el ataque.</b> La guía enseña la forma real de lo que vas a lanzar: una franja, un cono, el círculo donde cae.</li>
         <li><b>Todo se avisa antes de caer.</b> Lo que hace daño se pinta en el suelo primero. Si te da, sabes por qué.</li>
         <li><b>Controles a tu medida.</b> Mueve y cambia de tamaño cada botón, joystick fijo o flotante, modo zurdo.</li>
         <li><b>Va fino en móviles modestos.</b> Tres calidades de gráficos y 30 o 60 fps.</li>
       </ul>
     </div>
     <button class="captura" type="button">
-      <img src="img/inicio.jpg" width="1280" height="693" loading="lazy" alt="Pantalla de inicio de Moshblaster con el blaster elegido sobre su isla">
+      <img src="img/inicio.jpg" width="1400" height="788" loading="lazy" alt="Pantalla de inicio de Moshblaster: tu blaster sobre la isla, en su pedestal">
     </button>
   </div>
 </section>
@@ -102,55 +105,105 @@
 <section id="modos" class="clara">
   <div class="ancho">
     <div class="cabecera entra">
-      <h2>Seis maneras de jugar</h2>
-      <p>Empiezas en el ladder y los demás modos se van abriendo con tu elo. Ninguno te obliga a dejar los otros.</p>
+      <span class="antetitulo">Modos</span>
+      <h2>Nueve maneras de jugar</h2>
+      <p>Empiezas en Blaster Royale y los demás modos se van abriendo con tu elo. Los de ladder suben el elo de tus blasters; los demás dan estrellas, esencia y premios propios.</p>
     </div>
-    <div class="rejilla tres">
-      <article class="carta modo entra" data-n="1" style="--c:var(--verde)">
-        <h3><span class="ficha" style="background:var(--verde)"><svg viewBox="0 0 24 24"><path d="M3 20h4V10H3zm7 0h4V4h-4zm7 0h4v-7h-4z"/></svg></span>Ladder</h3>
-        <p>Oleadas de bots que dan elo. Cada una puede traer un giro: emboscada, estampida, lluvia de meteoros, un cazador con botín. Se pelea en la tierra de tu rango, del desguace a la cima.</p>
-        <span class="cuando">Desde el principio</span>
+
+    <article class="carta estrella entra" style="--c:var(--morado)">
+      <button class="captura" type="button">
+        <img src="img/royale.jpg" width="1400" height="788" loading="lazy" alt="Una partida de Blaster Royale: tu blaster junto al mercado, el minimapa de la isla y la zona que se cierra">
+      </button>
+      <div>
+        <span class="sello-modo">Modo principal · desde el principio</span>
+        <h3><span class="ficha" style="background:var(--morado)"><svg viewBox="0 0 24 24"><path d="M3 18h18l-1.5-10-4.5 4-3-7-3 7-4.5-4z"/></svg></span>Blaster Royale</h3>
+        <p>Veinte equipos caen en una isla con trece sitios: un castillo, un puerto, un cementerio, un lago y un río que solo se cruza por sus puentes. Rompe cajas, entra en las casas, escóndete en los arbustos y aguanta dentro de la zona.</p>
+        <ul class="puntos">
+          <li>Cada equipo que eliminas te da un blaster de tu colección o una fusión, hasta seis.</li>
+          <li>Repite uno y se fusiona: más grande, con más vida y más fuerza.</li>
+          <li>Trampolines, portales, barriles que estallan y hogueras que curan.</li>
+        </ul>
+      </div>
+    </article>
+
+    <div class="rejilla cuatro">
+      <article class="carta modo entra" style="--c:var(--rojo)">
+        <h3><span class="ficha" style="background:var(--rojo)"><svg viewBox="0 0 24 24"><path d="M3 3l7 7-2 2-7-7V3zm18 0v2l-7 7-2-2 7-7zM5 14l2-2 5 5-2 2-1.5-1.5L5 21l-2-2 3.5-3.5zm14 0 2 2-3.5 3.5L21 21l-2 2-3.5-3.5L14 21l-2-2 5-5z"/></svg></span>Duelos</h3>
+        <p>Un torneo de dieciséis equipos, de tres contra tres: tú y dos compañeros, de octavos a la final.</p>
+        <span class="cuando">200 de elo</span>
       </article>
-      <article class="carta modo entra" data-n="2" style="--c:var(--amarillo)">
-        <h3><span class="ficha" style="background:var(--amarillo)"><svg viewBox="0 0 24 24"><path d="M5 3h14v18l-7-4-7 4zm4 4v2h6V7zm0 4v2h6v-2z"/></svg></span>Contratos de caza</h3>
-        <p>Una historia corta en diez combates que acaba en un duelo contra un blaster especial. Si lo vences, puede que se una a ti. Puedes repetir el duelo siempre que quieras.</p>
+      <article class="carta modo entra" style="--c:var(--hielo)">
+        <h3><span class="ficha" style="background:var(--hielo)"><svg viewBox="0 0 24 24"><path d="M15 4a4 4 0 0 0-4 4c0 .7.2 1.4.5 2H8a5 5 0 0 0-5 5c0 3 3 5 8 5s10-2 10-6c0-2-1.2-3.6-3-4.3V8a3 3 0 0 0-3-4zm3 2.5 3-1-1.5 2.5z"/></svg></span>Robapatos</h3>
+        <p>Dos bañeras con tres patos cada una. Roba los suyos, defiende los tuyos y lánzalos a tu base.</p>
         <span class="cuando">500 de elo</span>
       </article>
-      <article class="carta modo entra" data-n="3" style="--c:var(--morado)">
+      <article class="carta modo entra" style="--c:var(--morado)">
         <h3><span class="ficha" style="background:var(--morado)"><svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-5 14.2V20h3v-2h1v2h2v-2h1v2h3v-3.8A8 8 0 0 0 12 2zM8.5 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg></span>Jefes</h3>
-        <p>Un camino de 33 jefes. Sus fases suman patrones, nunca los cambian: al final lo hacen todo a la vez. Cada uno es débil a un elemento.</p>
+        <p>Un camino de 37 jefes. Sus fases suman patrones y cada uno es débil a un elemento.</p>
         <span class="cuando">800 de elo</span>
       </article>
-      <article class="carta modo entra" data-n="4" style="--c:var(--rojo)">
+      <article class="carta modo entra" style="--c:var(--rojo)">
         <h3><span class="ficha" style="background:var(--rojo)"><svg viewBox="0 0 24 24"><path d="M12 2c1 4 5 6 5 11a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-4-1-6 1-10z"/></svg></span>Entrada al infierno</h3>
-        <p>Oleadas sin fin de demonios. Cada cinco eliges un pacto que cambia las reglas de la partida, y te retiras cuando quieras con lo ganado.</p>
+        <p>Oleadas sin fin de demonios, pactos que cambian las reglas y señores del abismo cada veinte.</p>
         <span class="cuando">1000 de elo</span>
       </article>
-      <article class="carta modo entra" data-n="5" style="--c:var(--azul)">
+      <article class="carta modo entra" style="--c:var(--naranja)">
+        <h3><span class="ficha" style="background:var(--naranja)"><svg viewBox="0 0 24 24"><path d="M12 6c4.5 0 8 3 8 7.5S16.5 21 12 21s-8-3-8-7.5S7.5 6 12 6zm1-4c2 0 3 1 3 2h-2l-1 2h-2l1-3c0-.6.4-1 1-1z"/></svg></span>Patata Caliente</h3>
+        <p>Golpea las patatas hasta que sean tuyas y mándaselas al otro equipo antes de que estallen.</p>
+        <span class="cuando">1200 de elo</span>
+      </article>
+      <article class="carta modo entra" style="--c:var(--azul)">
         <h3><span class="ficha" style="background:var(--azul)"><svg viewBox="0 0 24 24"><path d="M12 3 3 11h2v9h5v-6h4v6h5v-9h2z"/></svg></span>El patio</h3>
-        <p>Tu plaza. Aquí no se pelea: paseas, tus blasters charlan, tus mascotas juegan y construyes a tu ritmo fuentes, tótems y una máquina de cápsulas.</p>
+        <p>Tu plaza: construye, decora, cambia el suelo y los árboles, y pasea con tus blasters y tus mascotas.</p>
         <span class="cuando">1500 de elo</span>
       </article>
-      <article class="carta modo entra" data-n="6" style="--c:var(--naranja)">
-        <h3><span class="ficha" style="background:var(--naranja)"><svg viewBox="0 0 24 24"><path d="M12 2 9 9 2 12l7 3 3 7 3-7 7-3-7-3z"/></svg></span>La expedición</h3>
-        <p>Un mundo abierto sin oleadas ni reloj: bosque, desierto y glaciar, con misiones, objetos, jefes propios y blasters salvajes que solo aparecen allí.</p>
+      <article class="carta modo entra" style="--c:var(--amarillo)">
+        <h3><span class="ficha" style="background:var(--amarillo)"><svg viewBox="0 0 24 24"><path d="M6 3h12v3h3v3a4 4 0 0 1-4 4 6 6 0 0 1-4 3v3h4v2H11v-2h4v-3a6 6 0 0 1-4-3 4 4 0 0 1-4-4V6h3zm-1 5v1a2 2 0 0 0 1 1.7V8zm13 0v2.7A2 2 0 0 0 19 9V8z"/></svg></span>Liga Blaster</h3>
+        <p>De bronce a campeón ultra. Una ruleta decide el modo de cada partida y tú eliges qué blaster llevas.</p>
+        <span class="cuando">2000 de elo</span>
+      </article>
+      <article class="carta modo entra" style="--c:var(--verde)">
+        <h3><span class="ficha" style="background:var(--verde)"><svg viewBox="0 0 24 24"><path d="M12 2 9 9 2 12l7 3 3 7 3-7 7-3-7-3z"/></svg></span>La expedición</h3>
+        <p>Un mundo abierto con cinco tierras y misiones con historia. El único sitio al que vas con un equipo de tres.</p>
         <span class="cuando">Desde el patio</span>
       </article>
     </div>
   </div>
 </section>
 
-<section id="blasters">
+<section id="equipo">
+  <div class="ancho partido entra">
+    <div>
+      <div class="cabecera" style="margin-bottom:0">
+        <span class="antetitulo">Tu blaster</span>
+        <h2>Uno a la vez, y bien elegido</h2>
+        <p>Juegas con un solo blaster, el que tú eliges. En los modos de tres contra tres pelean a tu lado dos compañeros con blasters al azar hasta que llegue el online, y el elo de la partida es entero para el tuyo.</p>
+      </div>
+      <ul>
+        <li><b>Cinco tipos:</b> asesino, destructor, control, soporte y tanque. Los soportes curan y protegen; los tanques atraen los golpes.</li>
+        <li><b>Cinco elementos:</b> agua, hielo, tierra, fuego y rayo. Cada jefe es débil a uno.</li>
+        <li><b>Equipo azul y rojo:</b> piezas que funcionan siempre y artilugios que lanzas tú.</li>
+        <li><b>Equipo de expedición:</b> desde el patio eliges a los tres que te acompañan al mundo abierto.</li>
+      </ul>
+    </div>
+    <button class="captura" type="button">
+      <img src="img/equipo3.jpg" width="1400" height="788" loading="lazy" alt="El equipo de expedición: el líder, dos apoyos y los 26 blasters para elegir">
+    </button>
+  </div>
+</section>
+
+<section id="blasters" class="clara">
   <div class="ancho partido alreves entra">
     <div>
       <div class="cabecera" style="margin-bottom:0">
-        <h2>50 blasters, ninguno repetido</h2>
-        <p>Una sirena que encierra en burbujas, un cocinero que voltea enemigos como tortitas, una relojera que rebobina cuatro segundos, un genio que da palmadas con manos de humo. Cada habilidad existe porque nadie más la tenía.</p>
+        <span class="antetitulo">Blasters</span>
+        <h2>26 blasters, ninguno repetido</h2>
+        <p>Una sirena que encierra en burbujas, una tetera que se calienta disparando, un pulpo director de orquesta, un mono que monta en su nube. Pocos y muy distintos: cada habilidad existe porque nadie más la tenía.</p>
       </div>
       <ul>
-        <li><b>Cuatro roles:</b> asesino, soporte, control y destructor.</li>
-        <li><b>Hasta el nivel 90</b>, con diez mejoras que cambian reglas, no solo números.</li>
-        <li><b>Aspectos que no son recolores:</b> los mejores cambian el modelo, visten tus ataques y hasta deciden cómo cae el enemigo.</li>
+        <li><b>De común a ultra</b>, y todos salen de las cajas.</li>
+        <li><b>Hasta el nivel 90</b>, con mejoras que cambian reglas, no solo números.</li>
+        <li><b>Aspectos que no son recolores:</b> cambian el modelo, visten tus ataques y hasta deciden cómo cae el rival.</li>
         <li><b>Campo de tiro:</b> prueba a cualquiera antes de tenerlo.</li>
       </ul>
       <div class="elementos" aria-label="Los cinco elementos">
@@ -162,43 +215,75 @@
       </div>
     </div>
     <button class="captura" type="button">
-      <img src="img/blasters.jpg" width="1280" height="693" loading="lazy" alt="Pantalla de blasters con el roster y las habilidades del elegido">
+      <img src="img/blasters.jpg" width="1400" height="788" loading="lazy" alt="El muro de blasters con su calidad, su nivel, su elemento y su rango">
     </button>
   </div>
 </section>
 
-<section id="expedicion" class="clara">
+<section id="expedicion">
   <div class="ancho partido entra">
     <div>
       <div class="cabecera" style="margin-bottom:0">
+        <span class="antetitulo">Mundo abierto</span>
         <h2>La expedición</h2>
-        <p>Sales del patio por una puerta de troncos y el juego cambia de ritmo. No hay oleadas ni final: hay un mapa, alguien que necesita un favor y cosas que es mejor descubrir tú.</p>
+        <p>Sales del patio andando y el juego cambia de ritmo. No hay oleadas ni final: hay un mapa, alguien que necesita un favor y cosas que es mejor descubrir tú.</p>
       </div>
       <ul>
+        <li><b>Cinco tierras unidas:</b> bosque, desierto, garganta, glaciar y una costa con su faro y su marea.</li>
         <li><b>Misiones con historia</b> que no son solo pelear: pescar, excavar, seguir un mapa roto, adivinar una contraseña.</li>
-        <li><b>Blasters salvajes</b> a tu nivel que salen cuando menos lo esperas. Vencerlos es la única forma de que se unan.</li>
-        <li><b>Mapa e inventario</b> propios, y jefes que no están en ningún otro sitio.</li>
+        <li><b>Tu equipo de tres:</b> el único modo en el que vas acompañado de tus propios blasters.</li>
+        <li><b>Mapa, inventario y tienda</b> propios, y jefes que no están en ningún otro sitio.</li>
       </ul>
     </div>
     <button class="captura recorte" type="button">
-      <img src="img/glaciar.jpg" width="1280" height="720" loading="lazy" alt="Un blaster explorando el glaciar, con muñecos de nieve, banderines y el minimapa">
+      <img src="img/glaciar.jpg" width="1280" height="720" loading="lazy" alt="Un blaster explorando el glaciar, con banderines y el minimapa">
     </button>
+  </div>
+</section>
+
+<section id="comunidad" class="clara">
+  <div class="ancho">
+    <div class="cabecera entra">
+      <span class="antetitulo">Comunidad</span>
+      <h2>Tu vitrina, tus amigos, el mundo</h2>
+      <p>Tu progreso es tuyo, pero no tienes por qué jugar solo.</p>
+    </div>
+    <div class="partido entra">
+      <button class="captura" type="button">
+        <img src="img/vitrina.jpg" width="1400" height="788" loading="lazy" alt="El perfil como vitrina: el mejor blaster en su pedestal, los trofeos y la colección">
+      </button>
+      <div class="rejilla una">
+        <article class="carta mini" style="--c:var(--amarillo)">
+          <h3><span class="ficha" style="background:var(--amarillo)"><svg viewBox="0 0 24 24"><path d="M3 20h4V10H3zm7 0h4V4h-4zm7 0h4v-7h-4z"/></svg></span>Ranking global</h3>
+          <p>Los cien jugadores con más elo del mundo, en su podio, con sus blasters en 3D.</p>
+        </article>
+        <article class="carta mini" style="--c:var(--verde)">
+          <h3><span class="ficha" style="background:var(--verde)"><svg viewBox="0 0 24 24"><path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM2 20c0-3.3 3.1-6 7-6s7 2.7 7 6zm15.5 0c0-2-.8-3.8-2.2-5.1 3.6-.5 6.7 1.7 6.7 5.1z"/></svg></span>Amigos</h3>
+          <p>Búscalos por su nombre o su código y mira su vitrina: su mejor blaster, sus trofeos y su puesto.</p>
+        </article>
+        <article class="carta mini" style="--c:var(--azul)">
+          <h3><span class="ficha" style="background:var(--azul)"><svg viewBox="0 0 24 24"><path d="M3 5h18v14H3zm2 2v.5l7 5 7-5V7l-7 5z"/></svg></span>Tu cuenta, a salvo</h3>
+          <p>Vincúlala con tu correo y recupérala entera si cambias de móvil o lo pierdes.</p>
+        </article>
+      </div>
+    </div>
   </div>
 </section>
 
 <section id="capturas">
   <div class="ancho">
     <div class="cabecera entra">
-      <h2>Capturas</h2>
+      <span class="antetitulo">Capturas</span>
+      <h2>Así se ve</h2>
       <p>Todo lo que ves está hecho con el propio juego: modelos, iconos, efectos y música salen del código. Toca una para verla en grande.</p>
     </div>
     <div class="rejilla dos">
-      <button class="captura entra" type="button"><img src="img/jefes.jpg" width="1280" height="693" loading="lazy" alt="El camino de jefes con AVARO, el coleccionista"><figcaption>El camino de jefes</figcaption></button>
-      <button class="captura entra" type="button"><img src="img/combate.jpg" width="1280" height="693" loading="lazy" alt="Combate en el ladder"><figcaption>Combate en el ladder</figcaption></button>
-      <button class="captura entra" type="button"><img src="img/pase.jpg" width="1280" height="693" loading="lazy" alt="El pase de la temporada BROTE"><figcaption>El pase de la temporada</figcaption></button>
-      <button class="captura entra" type="button"><img src="img/armeria.jpg" width="1280" height="693" loading="lazy" alt="La armería, con el equipo azul y rojo"><figcaption>La armería</figcaption></button>
-      <button class="captura entra" type="button"><img src="img/camino.jpg" width="1280" height="693" loading="lazy" alt="El camino de elo con sus paisajes"><figcaption>El camino de elo</figcaption></button>
-      <button class="captura recorte entra" type="button"><img src="img/neva.jpg" width="1280" height="720" loading="lazy" alt="NEVA y SIROCO, dos blasters salvajes, y el aspecto DIAMANTE"><figcaption>Salvajes y el aspecto diamante</figcaption></button>
+      <button class="captura entra" type="button"><img src="img/royale2.jpg" width="1400" height="788" loading="lazy" alt="Blaster Royale con tu blaster y la zona"><figcaption>Blaster Royale</figcaption></button>
+      <button class="captura entra" type="button"><img src="img/patata.jpg" width="1400" height="788" loading="lazy" alt="Patata Caliente, tres contra tres"><figcaption>Patata Caliente</figcaption></button>
+      <button class="captura entra" type="button"><img src="img/robapatos.jpg" width="1400" height="788" loading="lazy" alt="Robapatos, llevando un pato a tu base"><figcaption>Robapatos</figcaption></button>
+      <button class="captura entra" type="button"><img src="img/jefe.jpg" width="1400" height="788" loading="lazy" alt="Un jefe con su barra de vida y su punto débil"><figcaption>Los jefes</figcaption></button>
+      <button class="captura entra" type="button"><img src="img/tienda.jpg" width="1400" height="788" loading="lazy" alt="La tienda con las ofertas del día"><figcaption>La tienda</figcaption></button>
+      <button class="captura recorte entra" type="button"><img src="img/neva.jpg" width="1280" height="720" loading="lazy" alt="El aspecto DIAMANTE y la expedición"><figcaption>El aspecto diamante</figcaption></button>
     </div>
   </div>
 </section>
@@ -206,8 +291,9 @@
 <section id="gratis" class="clara justo">
   <div class="ancho">
     <div class="cabecera entra">
+      <span class="antetitulo">Gratis</span>
       <h2>Gratis, y sin trampas</h2>
-      <p>Moshblaster se descarga y se juega entero sin pagar. Hay anuncios y hay compras, y preferimos contarte exactamente cómo son.</p>
+      <p>Moshblaster se descarga y se juega entero sin pagar. Hay compras, y preferimos contarte exactamente cómo son.</p>
     </div>
     <div class="rejilla tres">
       <article class="carta entra">
@@ -215,39 +301,44 @@
         <p>Blasters, niveles, equipo, mascotas y modos se consiguen jugando. Ningún modo ni ningún jefe está detrás de un pago.</p>
       </article>
       <article class="carta entra">
-        <h3><span class="emoji" style="background:var(--amarillo)">▶</span>Anuncios que eliges tú</h3>
-        <p>Nunca salta un anuncio en mitad de una partida ni al cambiar de pantalla. Solo los ves si tocas tú el botón, a cambio de un premio: la ruleta diaria o la moneda del diablillo.</p>
+        <h3><span class="emoji" style="background:var(--amarillo)">▶</span>Sin anuncios a traición</h3>
+        <p>Ahora mismo el juego no muestra anuncios. Si algún día los hay, nunca saltarán en mitad de una partida: solo los verás si tú lo eliges, a cambio de un premio.</p>
       </article>
       <article class="carta entra">
         <h3><span class="emoji" style="background:var(--azul)">€</span>Compras opcionales</h3>
         <p>En la tienda hay packs de QS y ofertas del día, de 0,99 € a 39,99 €. Sirven para ir más deprisa o para vestir a tus blasters; no hacen falta para nada.</p>
       </article>
     </div>
-    <p class="aviso entra"><b>Para padres y madres:</b> las compras se hacen con dinero real a través de Google Play. Puedes exigir autenticación en cada compra desde los ajustes de Google Play, o desactivarlas con los controles parentales. El juego tiene premios al azar (cajas, huevos, cápsulas y la ruleta).</p>
+    <p class="aviso entra"><b>Para padres y madres:</b> las compras se hacen con dinero real a través de Google Play. Puedes exigir autenticación en cada compra desde los ajustes de Google Play, o desactivarlas con los controles parentales. El juego tiene premios al azar (cajas, huevos, cápsulas y la ruleta), con sus probabilidades escritas al lado.</p>
   </div>
 </section>
 
 <section id="preguntas">
   <div class="ancho">
     <div class="cabecera entra">
-      <h2>Preguntas</h2>
+      <span class="antetitulo">Preguntas</span>
+      <h2>Preguntas frecuentes</h2>
     </div>
     <details>
       <summary>¿Cuánto cuesta?</summary>
-      <div><p>Descargarlo y jugarlo es gratis. Dentro hay compras opcionales con dinero real (packs de QS y ofertas del día) y anuncios que solo ves si tú lo eliges, a cambio de un premio. Todo el contenido se puede conseguir jugando.</p></div>
+      <div><p>Descargarlo y jugarlo es gratis. Dentro hay compras opcionales con dinero real (packs de QS y ofertas del día). Todo el contenido se puede conseguir jugando.</p></div>
     </details>
     <details>
       <summary>¿Dónde se juega?</summary>
-      <div><p>En móviles y tablets Android, en horizontal. Ahora mismo es una beta; la versión de Google Play está en camino.</p></div>
+      <div><p>En móviles y tablets Android, en horizontal. Ahora mismo está en beta abierta en España.</p></div>
     </details>
     <details>
-      <summary>Juego con el APK. ¿Qué pasa con mi cuenta cuando salga en Google Play?</summary>
-      <div><p>Te la llevas. Abre el juego, ve a <b>Ajustes &gt; Exportar cuenta</b> y guarda el código que te da. En la versión de Google Play, en la pantalla del nombre, toca <b>Ya tengo cuenta</b> y pégalo. Entra todo: blasters, niveles, aspectos, esencia y el título exclusivo de la beta.</p>
-      <p><b>Exporta antes de desinstalar el APK.</b> El progreso vive en tu móvil y nosotros no guardamos copia. Ese código es tu cuenta entera: no se lo pases a nadie.</p></div>
+      <summary>¿Se juega contra otras personas?</summary>
+      <div><p>Hoy los rivales los lleva el propio juego, con una cabeza propia para cada blaster. El ranking global, los amigos y los perfiles ya son en línea, y el multijugador en tiempo real está en camino.</p></div>
+    </details>
+    <details>
+      <summary>¿Qué pasa si cambio de móvil?</summary>
+      <div><p>Vincula tu cuenta con tu correo en <b>Ajustes &gt; Cuenta</b>. En el móvil nuevo, en la pantalla del nombre, toca <b>Entrar con mi correo</b> y vuelve todo: blasters, niveles, aspectos y QS.</p>
+      <p>Sin correo también puedes llevártela: <b>Ajustes &gt; Cuenta &gt; Exportar cuenta</b> te da un código con la cuenta entera. Ese código es tu cuenta: no se lo pases a nadie.</p></div>
     </details>
     <details>
       <summary>¿Necesito conexión?</summary>
-      <div><p>Para jugar, no. Internet hace falta para el ranking global, para ver un anuncio y para comprar en la tienda.</p></div>
+      <div><p>Para jugar, no. Internet hace falta para el ranking, los amigos, la copia de tu cuenta y para comprar en la tienda.</p></div>
     </details>
     <details>
       <summary>He comprado algo y no me ha llegado</summary>
@@ -255,7 +346,7 @@
     </details>
     <details>
       <summary>¿Qué datos recoge?</summary>
-      <div><p>Tu partida se queda en tu móvil. El ranking usa tu nombre de jugador y tu puntuación; los anuncios y las compras los gestiona Google con sus propias reglas. Está todo en la <a href="privacidad.html">política de privacidad</a>.</p></div>
+      <div><p>Tu partida se queda en tu móvil. El servidor guarda tu nombre de jugador, tu puntuación, lo que enseña tu vitrina y tus amigos y, solo si vinculas tu cuenta, tu correo y una copia de tu progreso. Las estadísticas de juego solo se envían si dices que sí. Está todo en la <a href="privacidad.html">política de privacidad</a>.</p></div>
     </details>
     <details>
       <summary>He encontrado un fallo o tengo una idea</summary>
@@ -266,11 +357,10 @@
 
 <section id="descarga" class="final">
   <div class="ancho">
-    <img class="icono" src="img/icono.png" width="256" height="256" alt="Icono de Moshblaster: BIP">
-    <h2>Elige a tu blaster</h2>
-    <p>Moshblaster está en beta y llega pronto a Google Play. Gratis, con compras opcionales.</p>
+    <img class="icono" src="img/icono.png" width="256" height="256" alt="Icono de Moshblaster">
+    <h2>Elige tu blaster</h2>
+    <p>Moshblaster está en beta abierta en España. Gratis, con compras opcionales.</p>
     <a class="boton apagado" data-play href="#descarga">Google Play: muy pronto</a>
-    <p class="nota">¿Ya juegas con el APK? <a href="#preguntas" style="color:#fff">Exporta tu cuenta</a> antes de cambiar.</p>
   </div>
 </section>
 
@@ -281,12 +371,13 @@
     <div class="col marca-pie">
       <a class="marca" href="index.html"><img src="img/favicon.png" alt=""><span><b>MOSH</b>BLASTER</span></a>
       <span>Un juego de Samby Games. © 2026.</span>
-      <span>Contiene anuncios y compras dentro de la aplicación.</span>
+      <span>Contiene compras dentro de la aplicación.</span>
     </div>
     <div class="col">
       <b>El juego</b>
       <a href="#modos">Modos</a>
       <a href="#blasters">Blasters</a>
+      <a href="#comunidad">Comunidad</a>
       <a href="#gratis">Gratis, y sin trampas</a>
     </div>
     <div class="col">
