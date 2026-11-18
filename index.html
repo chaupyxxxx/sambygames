@@ -31,7 +31,7 @@
       <a href="#capturas">Capturas</a>
       <a href="#preguntas">Preguntas</a>
     </nav>
-    <a class="boton mini" href="#descarga">Descargar</a>
+    <a class="boton mini" href="#descarga">Apúntate</a>
   </div>
 </header>
 
@@ -40,11 +40,11 @@
 <div class="portada">
   <div class="ancho">
     <div>
-      <span class="etiqueta">Beta abierta · Android</span>
+      <span class="etiqueta">Beta cerrada · Android</span>
       <h1 class="rotulo"><span class="mosh">Mosh</span><span class="blaster">blaster</span></h1>
       <p class="lema">Elige tu blaster de juguete y salta a la isla: veinte equipos, una zona que se cierra y un solo ganador. Y cuando quieras otra cosa, duelos, patos que robar, patatas que estallan, la liga y treinta y siete jefes.</p>
       <div class="botones">
-        <a class="boton" href="#descarga" data-play>Jugar gratis</a>
+        <a class="boton" href="#descarga">Apúntate a la beta</a>
         <a class="boton azul" href="#modos">Ver el juego</a>
       </div>
       <ul class="sellos">
@@ -353,9 +353,20 @@
 <section id="descarga" class="final">
   <div class="ancho">
     <img class="icono" src="img/icono.png" width="256" height="256" alt="Icono de Moshblaster">
-    <h2>Elige tu blaster</h2>
-    <p>Moshblaster está en beta abierta en España. Gratis, sin compras y sin anuncios.</p>
-    <a class="boton apagado" data-play href="#descarga">Google Play: muy pronto</a>
+    <h2>Apúntate a la beta</h2>
+    <p>Moshblaster está en beta cerrada en Google Play. Deja el correo de tu cuenta de Google y te damos acceso: te llegará el enlace de descarga al momento, y en unos días podrás jugar. Gratis, sin compras y sin anuncios.</p>
+    <form class="lista" id="lista" novalidate>
+      <div class="campos">
+        <label class="oculto" for="lista-correo">Tu correo de Google</label>
+        <input id="lista-correo" name="email" type="email" inputmode="email" autocomplete="email" required maxlength="200" placeholder="tucorreo@gmail.com">
+        <label class="oculto" for="lista-nombre">Tu nombre (opcional)</label>
+        <input id="lista-nombre" name="name" type="text" autocomplete="nickname" maxlength="24" placeholder="Tu nombre (opcional)">
+        <input class="trampa" name="web" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="boton" type="submit">Quiero jugar</button>
+      </div>
+      <p class="aviso" role="status" aria-live="polite"></p>
+      <p class="nota">Usa el correo con el que entras en Google Play en el móvil: solo ese podrá descargarlo. Solo lo usamos para darte acceso a la beta (<a href="privacidad.html">privacidad</a>).</p>
+    </form>
   </div>
 </section>
 
