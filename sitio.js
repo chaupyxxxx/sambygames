@@ -232,3 +232,39 @@ if (lista) {
     boton.textContent = "Quiero jugar";
   });
 }
+
+// ------------------------------------------------------------------ pantalla de carga
+// Espera a que esten la portada y los blasters de arriba (o 5 s como mucho).
+const carga = document.querySelector(".carga");
+if (carga) {
+  const barra = carga.querySelector("i");
+  const cosas = [...document.querySelectorAll(".portada img, .escena-img")];
+  const video = document.querySelector(".fondo-video");
+  let hechas = 0; const total = cosas.length + 1;
+  const quita = () => { if (carga.classList.contains("fuera")) return; barra.style.width = "100%"; setTimeout(() => carga.classList.add("fuera"), 250); setTimeout(() => carga.remove(), 900); };
+  const una = () => { hechas++; barra.style.width = Math.round(100 * hechas / total) + "%"; if (hechas >= total) quita(); };
+  cosas.forEach((i) => { if (i.complete) una(); else { i.addEventListener("load", una, { once: true }); i.addEventListener("error", una, { once: true }); } });
+  if (video && video.readyState < 3) { video.addEventListener("canplay", una, { once: true }); video.addEventListener("error", una, { once: true }); } else una();
+  setTimeout(quita, 5000);
+}
+
+// ------------------------------------------------------------------ cartas que se inclinan
+if (matchMedia("(hover: hover)").matches) {
+  document.querySelectorAll(".carta-modo").forEach((c) => {
+    c.addEventListener("pointermove", (e) => {
+      const r = c.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+      c.style.setProperty("--ry", (x * 10).toFixed(2) + "deg");
+      c.style.setProperty("--rx", (-y * 8).toFixed(2) + "deg");
+    });
+    c.addEventListener("pointerleave", () => { c.style.setProperty("--ry", "0deg"); c.style.setProperty("--rx", "0deg"); });
+  });
+}
+
+// ------------------------------------------------------------------ cabezas asomando por el pie
+const cabezas = document.querySelector(".pie-cabezas");
+if (cabezas) {
+  const ids = BLASTERS.map((b) => b[0]);
+  for (let i = ids.length - 1; i > 0; i--) { const j = (Math.random() * (i + 1)) | 0; [ids[i], ids[j]] = [ids[j], ids[i]]; }
+  ids.forEach((id) => { const im = document.createElement("img"); im.src = "img/b/" + id + ".webp"; im.alt = ""; im.loading = "lazy"; cabezas.appendChild(im); });
+}

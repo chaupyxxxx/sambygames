@@ -13,12 +13,15 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#170b3b">
 <link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;900&family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilo.css">
 </head>
 <body class="inicio">
+
+<div class="carga" aria-hidden="true"><div class="carga-dentro"><img src="img/icono.png" alt=""><div class="carga-barra"><i></i></div><p>CARGANDO</p></div></div>
 
 <header class="barra">
   <div class="ancho">
@@ -101,47 +104,72 @@
 
 <!-- ============================ MODOS ============================ -->
 <section id="modos" class="modos">
+  <div class="filo arriba" aria-hidden="true"></div>
   <div class="ancho">
-    <header class="titulo-seccion claro entra">
-      <span class="antetitulo">Modos de juego</span>
-      <h2>Nunca la misma <em>partida</em></h2>
-      <p>Cada modo cambia el campo, las reglas y el día. Juega solo, en dúo o en trío.</p>
+    <header class="cartel-seccion entra">
+      <span class="cinta-titulo">Modos de juego</span>
+      <h2 class="rotulo-seccion"><span>Elige</span> <span>tu</span> <span>caos</span></h2>
     </header>
 
-    <article class="modo estrella entra" style="--c:#ffcd2e">
-      <div class="modo-video"><video data-src="vid/royale.mp4" muted loop playsinline preload="none" poster="vid/portada.jpg"></video></div>
-      <div class="modo-texto">
-        <span class="chapa">Modo estrella</span>
-        <h3>Blaster Royale</h3>
-        <p>Veinte equipos caen en una isla enorme. Rompe cajas, recluta blasters, fusiónalos para hacerlos gigantes y sé el último en pie mientras la zona se cierra.</p>
-        <ul class="pastillas"><li>Solo</li><li>Dúos online</li><li>Tríos online</li></ul>
+    <article class="carta-modo grande entra" style="--c1:#ffe14d;--c2:#ff9d00">
+      <div class="cm-cielo" aria-hidden="true"></div>
+      <div class="cm-tele"><video data-src="vid/royale.mp4" muted loop playsinline preload="none"></video><span class="cm-vivo">EN DIRECTO</span></div>
+      <div class="cm-info">
+        <span class="cm-tag">Solo · Dúos · Tríos</span>
+        <h3 class="cm-nombre">Blaster Royale</h3>
+        <p class="cm-texto">Veinte equipos caen en una isla enorme. Rompe cajas fuertes, recluta blasters, fusiónalos hasta hacerlos gigantes y sé el último en pie mientras la zona se cierra.</p>
       </div>
+      <img class="cm-blaster" src="img/b/vekta.webp" alt="" aria-hidden="true">
     </article>
 
     <div class="modos-rejilla">
-      <article class="modo entra" style="--c:#ff5d6c">
-        <div class="modo-video"><video data-src="vid/duelos.mp4" muted loop playsinline preload="none"></video></div>
-        <div class="modo-texto"><h3>Duelos</h3><p>Torneo de dieciséis equipos, 3 contra 3. Llega a la final.</p></div>
+      <article class="carta-modo entra" style="--c1:#ff7a8a;--c2:#e8264a">
+        <div class="cm-cielo" aria-hidden="true"></div>
+        <span class="cm-tag">3 vs 3</span>
+        <div class="cm-tele"><video data-src="vid/duelos.mp4" muted loop playsinline preload="none"></video></div>
+        <h3 class="cm-nombre">Duelos</h3>
+        <p class="cm-texto">Torneo de dieciséis equipos. Llega a la final.</p>
+        <img class="cm-blaster" src="img/b/zeph.webp" alt="" aria-hidden="true">
       </article>
-      <article class="modo entra" style="--c:#38b6ff">
-        <div class="modo-video"><video data-src="vid/patos.mp4" muted loop playsinline preload="none"></video></div>
-        <div class="modo-texto"><h3>Robapatos</h3><p>Roba los patos de su bañera y llévalos a la tuya.</p></div>
+      <article class="carta-modo entra" style="--c1:#7fe0ff;--c2:#1f86e8">
+        <div class="cm-cielo" aria-hidden="true"></div>
+        <span class="cm-tag">3 vs 3</span>
+        <div class="cm-tele"><video data-src="vid/patos.mp4" muted loop playsinline preload="none"></video></div>
+        <h3 class="cm-nombre">Robapatos</h3>
+        <p class="cm-texto">Roba sus patos de goma y llévalos a tu bañera.</p>
+        <img class="cm-blaster" src="img/b/kiwi.webp" alt="" aria-hidden="true">
       </article>
-      <article class="modo entra" style="--c:#ff9a3d">
-        <div class="modo-video"><video data-src="vid/patata.mp4" muted loop playsinline preload="none"></video></div>
-        <div class="modo-texto"><h3>Patata Caliente</h3><p>Pégale para hacerla tuya y mándala antes de que estalle.</p></div>
+      <article class="carta-modo entra" style="--c1:#ffbf5a;--c2:#f06a12">
+        <div class="cm-cielo" aria-hidden="true"></div>
+        <span class="cm-tag">3 vs 3</span>
+        <div class="cm-tele"><video data-src="vid/patata.mp4" muted loop playsinline preload="none"></video></div>
+        <h3 class="cm-nombre">Patata Caliente</h3>
+        <p class="cm-texto">Hazla tuya a golpes y mándala antes de que estalle.</p>
+        <img class="cm-blaster" src="img/b/chuf.webp" alt="" aria-hidden="true">
       </article>
-      <article class="modo entra" style="--c:#ff4fc8">
-        <div class="modo-video"><video data-src="vid/pinata.mp4" muted loop playsinline preload="none"></video></div>
-        <div class="modo-texto"><h3>Piñata</h3><p>Revienta la piñata y lleva los caramelos a tu cesta.</p></div>
+      <article class="carta-modo entra" style="--c1:#ff9ce4;--c2:#d6249f">
+        <div class="cm-cielo" aria-hidden="true"></div>
+        <span class="cm-tag">3 vs 3</span>
+        <div class="cm-tele"><video data-src="vid/pinata.mp4" muted loop playsinline preload="none"></video></div>
+        <h3 class="cm-nombre">Piñata</h3>
+        <p class="cm-texto">Revienta la piñata y llena tu cesta de caramelos.</p>
+        <img class="cm-blaster" src="img/b/kira.webp" alt="" aria-hidden="true">
       </article>
-      <article class="modo entra" style="--c:#8fe3ff">
-        <div class="modo-video"><video data-src="vid/jefes.mp4" muted loop playsinline preload="none"></video></div>
-        <div class="modo-texto"><h3>Jefes</h3><p>Cinco mundos, veinte jefes con fases y su versión ULTRA.</p></div>
+      <article class="carta-modo entra" style="--c1:#b8f0ff;--c2:#3a8fd8">
+        <div class="cm-cielo" aria-hidden="true"></div>
+        <span class="cm-tag">Jefes</span>
+        <div class="cm-tele"><video data-src="vid/jefes.mp4" muted loop playsinline preload="none"></video></div>
+        <h3 class="cm-nombre">20 jefes</h3>
+        <p class="cm-texto">Cinco mundos, jefes con fases y su versión ULTRA.</p>
+        <img class="cm-blaster" src="img/b/borea.webp" alt="" aria-hidden="true">
       </article>
-      <article class="modo entra" style="--c:#a47bff">
-        <div class="modo-video"><video data-src="vid/cajas.mp4" muted loop playsinline preload="none"></video></div>
-        <div class="modo-texto"><h3>Y mucho más</h3><p>Liga Blaster, el Infierno sin fin, tu patio y una expedición por un mundo entero.</p></div>
+      <article class="carta-modo entra" style="--c1:#c9a2ff;--c2:#6a2fe0">
+        <div class="cm-cielo" aria-hidden="true"></div>
+        <span class="cm-tag">Y más</span>
+        <div class="cm-tele"><video data-src="vid/cajas.mp4" muted loop playsinline preload="none"></video></div>
+        <h3 class="cm-nombre">Y mucho más</h3>
+        <p class="cm-texto">Liga Blaster, el Infierno sin fin, tu patio y una expedición entera.</p>
+        <img class="cm-blaster" src="img/b/wuki.webp" alt="" aria-hidden="true">
       </article>
     </div>
   </div>
@@ -149,34 +177,48 @@
 
 <!-- ============================ CIFRAS ============================ -->
 <section class="cifras" aria-label="El juego en cifras">
+  <div class="filo arriba" aria-hidden="true"></div>
   <div class="ancho cifras-fila">
-    <div class="cifra entra"><b data-cuenta="27">27</b><span>blasters</span></div>
-    <div class="cifra entra"><b data-cuenta="9">9</b><span>modos</span></div>
-    <div class="cifra entra"><b data-cuenta="20">20</b><span>jefes</span></div>
-    <div class="cifra entra"><b>3<small>min</small></b><span>por partida</span></div>
-    <div class="cifra entra"><b>0<small>€</small></b><span>para jugar</span></div>
+    <div class="estallido entra" style="--c:#ffd23f;--g:-6deg"><b data-cuenta="27">27</b><span>blasters</span></div>
+    <div class="estallido entra" style="--c:#38e1ff;--g:5deg"><b data-cuenta="9">9</b><span>modos</span></div>
+    <div class="estallido entra" style="--c:#ff7ad9;--g:-3deg"><b data-cuenta="20">20</b><span>jefes</span></div>
+    <div class="estallido entra" style="--c:#7dff9b;--g:6deg"><b>3'</b><span>por partida</span></div>
+    <div class="estallido entra" style="--c:#ff9a3d;--g:-5deg"><b>0€</b><span>para jugar</span></div>
   </div>
 </section>
 
 <!-- ============================ AMIGOS ============================ -->
 <section id="amigos" class="amigos">
+  <div class="amigos-rayos" aria-hidden="true"></div>
   <div class="ancho amigos-dentro">
-    <div class="amigos-figuras entra" aria-hidden="true">
-      <img class="af a1" src="img/b/gota.webp" alt="">
-      <img class="af a2" src="img/b/chuf.webp" alt="">
-      <img class="af a3" src="img/b/wuki.webp" alt="">
+    <div class="podio entra" aria-hidden="true">
+      <div class="puesto p2"><img src="img/b/gota.webp" alt=""><div class="peana"><b>2</b></div></div>
+      <div class="puesto p1"><span class="corona">👑</span><img src="img/b/chuf.webp" alt=""><div class="peana"><b>1</b></div></div>
+      <div class="puesto p3"><img src="img/b/wuki.webp" alt=""><div class="peana"><b>3</b></div></div>
     </div>
     <div class="amigos-texto">
-      <header class="titulo-seccion entra">
-        <span class="antetitulo">Online</span>
-        <h2>Mejor con <em>amigos</em></h2>
+      <header class="cartel-seccion izq entra">
+        <span class="cinta-titulo azul">Online</span>
+        <h2 class="rotulo-seccion oscuro"><span>Mejor</span> <span>con</span> <span>amigos</span></h2>
       </header>
-      <ul class="ventajas">
-        <li class="entra"><span class="ico" style="--c:#38b6ff">👥</span><div><b>Dúos y tríos de verdad</b><p>Crea una sala, invita a tus amigos y caed juntos en el Royale o contra un jefe.</p></div></li>
-        <li class="entra"><span class="ico" style="--c:#ffcd2e">🏆</span><div><b>Ranking mundial</b><p>Top 100 por elo y por liga. Tu vitrina con tu mejor blaster y tus trofeos.</p></div></li>
-        <li class="entra"><span class="ico" style="--c:#ff4fc8">✨</span><div><b>Aspectos, mascotas y emotes</b><p>Gana cajas jugando, abre sobres del álbum y colecciónalo todo.</p></div></li>
-        <li class="entra"><span class="ico" style="--c:#7dff9b">🛡️</span><div><b>Tu cuenta, a salvo</b><p>Vincula tu correo y recupera tu progreso si cambias de móvil.</p></div></li>
-      </ul>
+      <div class="losas">
+        <div class="losa entra" style="--c:#3b7bff">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="16" r="7"/><circle cx="33" cy="18" r="6"/><path d="M4 40c0-8 6-13 13-13s13 5 13 13z"/><path d="M27 40c1-6 4-10 7-10 5 0 10 4 10 10z"/></svg>
+          <b>Dúos y tríos</b><p>Crea una sala, invita a tus amigos y caed juntos.</p>
+        </div>
+        <div class="losa entra" style="--c:#ff9a00">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 6h20v8c0 9-4 15-10 15S14 23 14 14z"/><path d="M14 9H6c0 7 3 11 9 12M34 9h8c0 7-3 11-9 12" fill="none" stroke-width="4" stroke="currentColor"/><path d="M20 29h8v6h5v6H15v-6h5z"/></svg>
+          <b>Ranking mundial</b><p>Top 100 por elo y por liga, y tu vitrina con trofeos.</p>
+        </div>
+        <div class="losa entra" style="--c:#e0168f">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4l5 13 13 5-13 5-5 13-5-13-13-5 13-5z"/><path d="M39 30l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg>
+          <b>Colecciónalo todo</b><p>Aspectos, mascotas, emotes y un álbum de cromos.</p>
+        </div>
+        <div class="losa entra" style="--c:#16b46b">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4l17 6v12c0 11-7 19-17 22C14 41 7 33 7 22V10z"/><path d="M16 24l6 6 11-12" fill="none" stroke="#0b0820" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <b>Cuenta a salvo</b><p>Vincula tu correo y no pierdes nada al cambiar de móvil.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -185,50 +227,56 @@
 <section id="beta" class="beta">
   <div class="beta-rayos" aria-hidden="true"></div>
   <div class="ancho">
-    <div class="beta-caja entra">
-      <img class="beta-bip" src="img/b/vekta.webp" alt="" aria-hidden="true">
-      <span class="antetitulo">Beta cerrada en Google Play</span>
-      <h2>Entra antes que <em>nadie</em></h2>
-      <p class="beta-texto">Deja el correo de tu cuenta de Google. Te llega el enlace al momento y en unos días tendrás acceso, aunque a veces tarda un poco más.</p>
-      <form class="lista" id="lista" novalidate>
-        <div class="campos">
-          <label class="oculto" for="lista-correo">Tu correo de Google</label>
-          <input id="lista-correo" name="email" type="email" inputmode="email" autocomplete="email" required maxlength="200" placeholder="tucorreo@gmail.com">
-          <label class="oculto" for="lista-nombre">Tu nombre (opcional)</label>
-          <input id="lista-nombre" name="name" type="text" autocomplete="nickname" maxlength="24" placeholder="Tu nombre (opcional)">
-          <input class="trampa" name="web" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <button class="boton grande" type="submit">Quiero jugar</button>
-        </div>
-        <p class="aviso" role="status" aria-live="polite"></p>
-        <p class="nota">Usa el correo con el que entras en Google Play en el móvil: solo ese podrá descargarlo. Solo lo usamos para darte acceso (<a href="privacidad.html">privacidad</a>).</p>
-      </form>
-      <ul class="beta-pasos">
-        <li><b>1</b>Te apuntas</li>
-        <li><b>2</b>Te damos de alta</li>
-        <li><b>3</b>Descargas y juegas</li>
-      </ul>
+    <div class="ticket-sitio entra">
+    <img class="ticket-bip" src="img/b/vekta.webp" alt="" aria-hidden="true">
+    <div class="ticket">
+      <div class="ticket-lado" aria-hidden="true"><span>PASE BETA</span><i>Nº 0001</i></div>
+      <div class="ticket-cuerpo">
+        <span class="cinta-titulo rosa">Beta cerrada · Google Play</span>
+        <h2 class="rotulo-seccion"><span>Entra</span> <span>antes</span> <span>que</span> <span>nadie</span></h2>
+        <p class="beta-texto">Deja el correo de tu cuenta de Google. Te llega el enlace al momento y en unos días tendrás acceso, aunque a veces tarda un poco más.</p>
+        <form class="lista" id="lista" novalidate>
+          <div class="campos">
+            <label class="oculto" for="lista-correo">Tu correo de Google</label>
+            <input id="lista-correo" name="email" type="email" inputmode="email" autocomplete="email" required maxlength="200" placeholder="tucorreo@gmail.com">
+            <label class="oculto" for="lista-nombre">Tu nombre (opcional)</label>
+            <input id="lista-nombre" name="name" type="text" autocomplete="nickname" maxlength="24" placeholder="Tu nombre (opcional)">
+            <input class="trampa" name="web" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="boton grande" type="submit">Quiero jugar</button>
+          </div>
+          <p class="aviso" role="status" aria-live="polite"></p>
+          <p class="nota">Usa el correo con el que entras en Google Play en el móvil: solo ese podrá descargarlo. Solo lo usamos para darte acceso (<a href="privacidad.html">privacidad</a>).</p>
+        </form>
+      </div>
+    </div>
     </div>
   </div>
 </section>
 
 <!-- ============================ PREGUNTAS ============================ -->
 <section id="preguntas" class="preguntas">
-  <div class="ancho estrecho">
-    <header class="titulo-seccion entra"><span class="antetitulo">Dudas</span><h2>Preguntas <em>rápidas</em></h2></header>
-    <details class="entra"><summary>¿Es gratis?</summary><p>Sí, entero. Ahora mismo no tiene compras con dinero real ni anuncios.</p></details>
-    <details class="entra"><summary>¿En qué móviles funciona?</summary><p>En Android, desde Google Play. Está pensado para ir fluido también en móviles sencillos, y tiene ajustes de gráficos.</p></details>
-    <details class="entra"><summary>Me he apuntado, ¿cuándo puedo jugar?</summary><p>Te damos de alta a mano en unos días. Google Play tarda de 1 a 4 días más en enseñarte la beta. Si el enlace dice «no disponible», todavía no te ha llegado: prueba al día siguiente.</p></details>
-    <details class="entra"><summary>¿Necesito internet?</summary><p>Para jugar solo, no. Para los modos online, el ranking, los amigos y la copia de tu cuenta, sí.</p></details>
-    <details class="entra"><summary>He encontrado un fallo o tengo una idea</summary><p>Escríbenos a <a href="mailto:sambygames@gmail.com">sambygames@gmail.com</a> y dinos qué blaster llevabas, en qué modo y qué móvil usas.</p></details>
+  <div class="ancho preguntas-dentro">
+    <div class="pregunton entra" aria-hidden="true">
+      <div class="bocadillo">¿Dudas?</div>
+      <img src="img/b/gota.webp" alt="">
+    </div>
+    <div class="dudas">
+      <details class="entra"><summary>¿Es gratis?</summary><p>Sí, entero. Ahora mismo no tiene compras con dinero real ni anuncios.</p></details>
+      <details class="entra"><summary>¿En qué móviles funciona?</summary><p>En Android, desde Google Play. Va fluido también en móviles sencillos y tiene ajustes de gráficos.</p></details>
+      <details class="entra"><summary>Me he apuntado, ¿cuándo juego?</summary><p>Te damos de alta a mano en unos días, y Google Play tarda de 1 a 4 días más en enseñarte la beta. Si el enlace dice «no disponible», prueba al día siguiente.</p></details>
+      <details class="entra"><summary>¿Necesito internet?</summary><p>Para jugar solo, no. Para los modos online, el ranking, los amigos y la copia de tu cuenta, sí.</p></details>
+      <details class="entra"><summary>Tengo una idea o he visto un fallo</summary><p>Escríbenos a <a href="mailto:sambygames@gmail.com">sambygames@gmail.com</a> y dinos qué blaster llevabas, en qué modo y qué móvil usas.</p></details>
+    </div>
   </div>
 </section>
 
 </main>
 
 <footer class="pie">
+  <div class="pie-cabezas" aria-hidden="true"></div>
   <div class="ancho pie-dentro">
     <div class="col marca-pie">
-      <a class="marca" href="#top"><img src="img/favicon.png" alt=""><span><b>MOSH</b>BLASTER</span></a>
+      <a class="marca grande" href="#top"><img src="img/favicon.png" alt=""><span><b>MOSH</b>BLASTER</span></a>
       <span>Un juego de Samby Games. © 2026.</span>
       <span class="version">BETA 0.8.6</span>
     </div>
